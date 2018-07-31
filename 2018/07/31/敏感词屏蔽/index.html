@@ -8,17 +8,17 @@
   
     <meta name="keywords" content="MinHow,MinHow's Blog" />
   
-  <meta name="description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要想到先将敏感词库用for循环遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感词替换为“**”。最后输出替换后内容。 涉及知识 for循环遍历列表 使用if语句进行判断 replace文本替换，replace(a,b) 用b替换a  源代码123456str = in">
+  <meta name="description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。 涉及知识 for循环遍历列表； 文件的读取，用open语句打开文件进行操作，并且最后要记得">
 <meta property="og:type" content="article">
 <meta property="og:title" content="敏感词屏蔽">
 <meta property="og:url" content="http://yoursite.com/2018/07/31/敏感词屏蔽/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要想到先将敏感词库用for循环遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感词替换为“**”。最后输出替换后内容。 涉及知识 for循环遍历列表 使用if语句进行判断 replace文本替换，replace(a,b) 用b替换a  源代码123456str = in">
+<meta property="og:description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。 涉及知识 for循环遍历列表； 文件的读取，用open语句打开文件进行操作，并且最后要记得">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-31T10:27:00.492Z">
+<meta property="og:updated_time" content="2018-07-31T12:02:20.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="敏感词屏蔽">
-<meta name="twitter:description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要想到先将敏感词库用for循环遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感词替换为“**”。最后输出替换后内容。 涉及知识 for循环遍历列表 使用if语句进行判断 replace文本替换，replace(a,b) 用b替换a  源代码123456str = in">
+<meta name="twitter:description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。 涉及知识 for循环遍历列表； 文件的读取，用open语句打开文件进行操作，并且最后要记得">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -138,16 +138,17 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h1 id="python敏感词屏蔽"><a href="#python敏感词屏蔽" class="headerlink" title="python敏感词屏蔽"></a>python敏感词屏蔽</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要想到先将敏感词库用for循环遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感词替换为“**”。最后输出替换后内容。</p>
-<h2 id="涉及知识"><a href="#涉及知识" class="headerlink" title="涉及知识"></a>涉及知识</h2><ol>
-<li>for循环遍历列表</li>
-<li>使用if语句进行判断</li>
+            <h1 id="python敏感词屏蔽"><a href="#python敏感词屏蔽" class="headerlink" title="python敏感词屏蔽"></a>python敏感词屏蔽</h1><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。</p>
+<h3 id="涉及知识"><a href="#涉及知识" class="headerlink" title="涉及知识"></a>涉及知识</h3><ol>
+<li>for循环遍历列表；</li>
+<li>文件的读取，用open语句打开文件进行操作，并且最后要记得用close关闭；</li>
+<li>使用if语句进行判断；</li>
 <li>replace文本替换，replace(a,b) 用b替换a</li>
 </ol>
-<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str = input()</span><br><span class="line">m = [&apos;网马&apos;,&apos;黑产&apos;,&apos;暗链&apos;,&apos;挖矿&apos;]  # 敏感词库</span><br><span class="line">for i in range(len(m)):</span><br><span class="line">    if m[i] in str:</span><br><span class="line">        str = str.replace(m[i],&apos;**&apos;)  # 用**替换敏感词</span><br><span class="line">print (str)</span><br></pre></td></tr></table></figure>
+<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">str = input()</span><br><span class="line">message = open(&quot;filter.txt&quot;,&quot;r&quot;)</span><br><span class="line">s = message.read()</span><br><span class="line">for i in range(len(s)):</span><br><span class="line">    if s[i] in str:</span><br><span class="line">        l=len(s[i])</span><br><span class="line">        str = str.replace(s[i],&quot;*&quot;*l)</span><br><span class="line">message.close()</span><br><span class="line">print (str)</span><br></pre></td></tr></table></figure>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月31日 18:27</p>
+        <p>最后更新： 2018年07月31日 20:02</p>
         <p>原始链接： <a class="post-url" href="/2018/07/31/敏感词屏蔽/" title="敏感词屏蔽">http://yoursite.com/2018/07/31/敏感词屏蔽/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -258,7 +259,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#python敏感词屏蔽"><span class="post-toc-text">python敏感词屏蔽</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#思路"><span class="post-toc-text">思路</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#涉及知识"><span class="post-toc-text">涉及知识</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#源代码"><span class="post-toc-text">源代码</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#python敏感词屏蔽"><span class="post-toc-text">python敏感词屏蔽</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#思路"><span class="post-toc-text">思路</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#涉及知识"><span class="post-toc-text">涉及知识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#源代码"><span class="post-toc-text">源代码</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
     
