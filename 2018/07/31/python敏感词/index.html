@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>buhuiwan | Hexo</title>
+  <title>python敏感词 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="MinHow,MinHow's Blog" />
   
-  <meta name="description" content="这个怎么玩，为什么提交不上！">
+  <meta name="description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。 涉及知识 for循环遍历列表； 文件的读取，用open语句打开文件进行操作，并且最后要记得">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="buhuiwan">
-<meta property="og:url" content="http://yoursite.com/2018/07/31/buhuiwan/index.html">
+<meta property="og:title" content="python敏感词">
+<meta property="og:url" content="http://yoursite.com/2018/07/31/python敏感词/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这个怎么玩，为什么提交不上！">
+<meta property="og:description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。 涉及知识 for循环遍历列表； 文件的读取，用open语句打开文件进行操作，并且最后要记得">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-31T13:17:25.514Z">
+<meta property="og:updated_time" content="2018-07-31T13:22:32.126Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="buhuiwan">
-<meta name="twitter:description" content="这个怎么玩，为什么提交不上！">
+<meta name="twitter:title" content="python敏感词">
+<meta name="twitter:description" content="python敏感词屏蔽思路首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。 涉及知识 for循环遍历列表； 文件的读取，用open语句打开文件进行操作，并且最后要记得">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -109,14 +110,14 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-buhuiwan" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-python敏感词" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      buhuiwan
+      python敏感词
     </h1>
     <div class="post-title-bar">
       <ul>
@@ -138,11 +139,18 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h1 id="这个怎么玩，为什么提交不上！"><a href="#这个怎么玩，为什么提交不上！" class="headerlink" title="这个怎么玩，为什么提交不上！"></a>这个怎么玩，为什么提交不上！</h1>
+            <h1 id="python敏感词屏蔽"><a href="#python敏感词屏蔽" class="headerlink" title="python敏感词屏蔽"></a>python敏感词屏蔽</h1><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>首先看明白题意是要将输入内容中包含的敏感词汇屏蔽掉，所以要先将包含敏感词汇的文件打开进行读取，并且用一个变量保存敏感词库，接着用for循环对敏感词库遍历一遍，然后将敏感词库中的每一个元素与输入内容对比，看输入内容中是否包含敏感词，如果包含则将敏感字替换为“*”。最后输出替换后内容。</p>
+<h3 id="涉及知识"><a href="#涉及知识" class="headerlink" title="涉及知识"></a>涉及知识</h3><ol>
+<li>for循环遍历列表；</li>
+<li>文件的读取，用open语句打开文件进行操作，并且最后要记得用close关闭；</li>
+<li>使用if语句进行判断；</li>
+<li>replace文本替换，replace(a,b) 用b替换a</li>
+</ol>
+<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">str = input()</span><br><span class="line">message = open(&quot;filter.txt&quot;,&quot;r&quot;)</span><br><span class="line">s = message.read()</span><br><span class="line">for i in range(len(s)):</span><br><span class="line">    if s[i] in str:</span><br><span class="line">        l=len(s[i])</span><br><span class="line">        str = str.replace(s[i],&quot;*&quot;*l)</span><br><span class="line">message.close()</span><br><span class="line">print (str)</span><br></pre></td></tr></table></figure>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月31日 21:17</p>
-        <p>原始链接： <a class="post-url" href="/2018/07/31/buhuiwan/" title="buhuiwan">http://yoursite.com/2018/07/31/buhuiwan/</a></p>
+        <p>最后更新： 2018年07月31日 21:22</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/31/python敏感词/" title="python敏感词">http://yoursite.com/2018/07/31/python敏感词/</a></p>
         <footer>
             <a href="http://yoursite.com">
                 <img src="/images/logo.png" alt="John Doe">
@@ -199,7 +207,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/31/buhuiwan/&title=《buhuiwan》 — Hexo&pic=http://yoursite.comimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/31/python敏感词/&title=《python敏感词》 — Hexo&pic=http://yoursite.comimages/logo.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -209,22 +217,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/31/buhuiwan/&title=《buhuiwan》 — Hexo&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/31/python敏感词/&title=《python敏感词》 — Hexo&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/31/buhuiwan/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/31/python敏感词/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《buhuiwan》 — Hexo&url=http://yoursite.com/2018/07/31/buhuiwan/&via=http://yoursite.com" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python敏感词》 — Hexo&url=http://yoursite.com/2018/07/31/python敏感词/&via=http://yoursite.com" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/31/buhuiwan/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/31/python敏感词/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -234,7 +242,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2018/07/31/buhuiwan/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2018/07/31/python敏感词/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -243,6 +251,13 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/python/" class="color2">python</a>
+      
+  </li>
+
         </ul>
         
     </footer>
@@ -252,26 +267,16 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#这个怎么玩，为什么提交不上！"><span class="post-toc-text">这个怎么玩，为什么提交不上！</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#python敏感词屏蔽"><span class="post-toc-text">python敏感词屏蔽</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#思路"><span class="post-toc-text">思路</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#涉及知识"><span class="post-toc-text">涉及知识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#源代码"><span class="post-toc-text">源代码</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
-    <a href="/2018/07/31/python敏感词/" id="article-nav-newer" class="article-nav-link-wrap">
-
-      <span class="article-nav-title">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-        
-          python敏感词
-        
-      </span>
-    </a>
   
-  
-    <a href="/2018/07/31/world-hello/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">world hello</span>
+    <a href="/2018/07/31/buhuiwan/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">buhuiwan</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
